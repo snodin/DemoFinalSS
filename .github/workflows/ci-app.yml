@@ -114,7 +114,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    needs: [docker-build]
+    needs: [docker-grype]
     steps:
       - name: Deploy the thing
         run: |
